@@ -1,0 +1,142 @@
+/* *********************************
+ * l-footer
+ * ********************************* */
+.l-footer {
+	background: $footer-color;
+	color: $font-color2;
+
+	&__wrap {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		padding: 35px 20px;
+		width: 1000px;
+
+		@include mq(md) {
+			display: block;
+			width: 100vw;
+			height: 100%;
+			text-align: center;
+		}
+	}
+
+	/* wrap left */
+	&__wrapLeft {
+		flex-basis: 20%;
+	}
+	/* msg */
+	&__msg {
+		position: absolute;
+		top: 46px;
+		left: 136px;
+		display: inline-block;
+		margin: 0;
+		border-bottom: 1px solid $font-color2;
+		font-size: 2.5rem;
+
+		@include mq(md) {
+			position: static;
+		}
+		@include mq(sm) {
+			font-size: 2rem;
+		}
+	}
+	/* tel */
+	&__tel {
+		position: absolute;
+		top: 86px;
+		left: 60px;
+		margin: 0;
+		font-size: 5rem;
+
+		@include mq(md) {
+			position: static;
+			margin-top: 15px;
+		}
+		@include mq(sm) {
+			font-size: 3rem;
+		}
+		& > i {
+			margin-right: 3px;
+			vertical-align: 5px;
+			font-size: 3.5rem;
+			transform: rotate(15deg);
+
+			@include mq(sm) {
+				font-size: 2.2rem;
+			}
+		}
+	}
+	/* address */
+	&__address {
+		position: absolute;
+		top: 150px;
+		left: 195px;
+		margin: 0;
+		font-size: 2rem;
+
+		@include mq(md) {
+			position: static;
+		}
+		@include mq(sm) {
+			font-size: 1.5rem;
+		}
+
+		& > i {
+			margin-right: 4px;
+			vertical-align: 1px;
+			font-size: 1.8rem;
+		}
+	}
+	/* table */
+	&__table {
+		position: absolute;
+		top: 206px;
+		left: 32px;
+		display: inline-block;
+		width: 460px;
+		border-collapse: collapse;
+		color: $font-color2;
+		text-align: center;
+		font-size: 1.1rem;
+
+		@include mq(md) {
+			position: static;
+			margin-top: 30px;
+		}
+		@include mq(sm) {
+			margin-top: 20px;
+			width: 80vw;
+		}
+	}
+	&__theadDay > *,
+	&__tbodyMorning > *,
+	&__tbodyAfternoon * {
+		padding: 13px 0;
+		width: 45px;
+		border: solid 1px $font-color2;
+	}
+	&__tableTime {
+		width: 140px;
+	}
+	&__tbodyMorning > th {
+		padding-left: 7px;
+	}
+
+	/* wrap right */
+	&__wrapRight {
+		flex-basis: 20%;
+		width: 450px;
+		height: 290px;
+
+		@include mq(md) {
+			display: none;
+		}
+
+		& > iframe {
+			width: inherit;
+			height: inherit;
+		}
+	}
+}

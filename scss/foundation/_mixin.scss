@@ -1,0 +1,13 @@
+// レスポンシブデザイン
+$breakpoints: (
+	"sm": "screen and (max-width: 414px)" /* iPhone 6/7/8 Plus */,
+	"md": "screen and (max-width: 768px)" /* iPad */,
+	"lg": "screen and (max-width: 1024px)" /* iPad Pro */,
+	"xl": "screen and (max-width: 1200px)",
+) !default;
+
+@mixin mq($breakpoint) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
