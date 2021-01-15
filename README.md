@@ -6,7 +6,7 @@
 
 ## 制作物の詳細
 
-&emsp;&emsp;[制作物の詳細ページはこちら](https://created-portfolio.com/sass.html/)
+&emsp;&emsp;[制作物の詳細ページはこちら](https://created-portfolio.com/detail/sass.html)
 
 ## 各バージョン・環境
 
