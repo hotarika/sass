@@ -1,11 +1,13 @@
-# Sass(SCSS)・レスポンシブの学習 #4
+# Sass(SCSS)・レスポンシブの学習
 
 Sass とレスポンシブデザインの学習を行いました。
 
 ## デモページ
 
 [デモページはこちら](https://created-portfolio.com/sass/)<br>
-[全体のデザインをご覧になりたい方はこちら](https://created-portfolio.com/detail/sass.html)
+
+![sass-all-pages](https://user-images.githubusercontent.com/61940526/108979984-903a1c00-76ce-11eb-964f-96aa47001514.png)
+
 
 ## 使用技術
 
